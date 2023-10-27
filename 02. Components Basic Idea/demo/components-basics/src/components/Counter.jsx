@@ -58,7 +58,7 @@ export default function Coutner(props) {
 
             <p>Count: {count}</p>
 
-            <button disabled={count < 0} onClick={() => setCount(count - 1)}>-</button>
+            <button disabled={count < 1} onClick={() => setCount(count - 1)}>-</button>
             <button onClick={clearCounterHandler}>clear</button>
             <button onClick={incrementClickHandler}>+</button>
         </div>
