@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Starwars(props) {
+export default function Starwars() {
     const [characters, setCharacters] = useState([]);
     
     useEffect(() => {
