@@ -1,0 +1,68 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url(/src/assets/images/slider/s1.jpg);
+    background-position-x: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .heroBanner .container {
+    min-height: 27em;
+    color: #515151;
+    /* background: blue; */
+  }
+  
+  .heroBanner .container h1:first-child {
+    margin-top: 1em;
+  }
+  .heroBanner .container h1 {
+    font-weight: 500;
+  }
+  .heroBanner .container p {
+    font-family: "PT Sans";
+    font-weight: 500;
+    margin-top: 1em;
+    width: 64ch;
+  }
+  
+  .heroBanner img {
+    width: 70%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .heroBanner .container {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 auto;
+    margin-top: 2em;
+  }
+  
+  .bannerImage {
+    text-align: center;
+    margin-top: 5em;
+    /* display: block; */
+  }
+  
+  .bannerInfo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* text-align: center; */
+    margin-top: 2em;
+  }
+  
+  .redText {
+    color: #f16f7e;
+  }
+  
+  .bannerInfo h1 {
+      font-size: 2.5em;
+      font-weight: 800;
+  }

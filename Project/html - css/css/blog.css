@@ -1,0 +1,70 @@
+.blog {
+    margin-bottom: 5em;
+}
+
+.blog {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+
+}
+
+.blog .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 0 3em 0;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /* background: red; */
+}
+
+.section-title h2 {
+    /* font-size: 2.5em; */
+    font-weight: 700;
+    margin-top: 0.5em;
+}
+
+.row-blog {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    /* flex-wrap: wrap; */
+    gap: 1em;
+}
+
+.row-blog img {
+    width: 300px;
+    height: auto;
+}
+
+.serv-cove {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.serv-cove .p-2 {
+    margin-top: 1em;
+    text-align: start;
+}
+
+.mt-3 {
+    text-align: start;
+}
+
+.fs-8 {
+    text-align: start;
+    font-size: 0.8em;;
+}
+
+.float-end {
+    float: right;
+    font-size: 0.8em;
+}
