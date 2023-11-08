@@ -1,16 +1,26 @@
+/* eslint-disable no-unused-vars */
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useNavigate } from "react-router-dom";
 
 export default function CharacterDetails() {
     const { id } = useParams();
+    const navigate = useNavigate();
     const [character, setCharacter] = useState({});
 
     useEffect(() => {
         fetch(`https://swapi.dev/api/people/${id}`)
-            .then(res => res.json())
+            .then(res =>{
+                if(!res.ok) {
+                    throw new Error('Something went wrong')
+                }
+                return res.json()
+            })
             .then(setCharacter)
+            .catch((err) => {
+                navigate('/characters')
+            })
     }, [id]);
-    
+
     return(
         <>
             <h1>{character.name}</h1>

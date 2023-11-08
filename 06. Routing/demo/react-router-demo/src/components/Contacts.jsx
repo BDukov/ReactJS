@@ -1,4 +1,15 @@
+import { useEffect } from "react"
+
 export default function Contacts() {
+
+    useEffect(() => {
+        console.log('Mount or update');
+
+       return () => {
+            console.log('Unmount')
+        }
+    }, [])
+
     return (
         <>
         <h2>Contacts Page</h2>

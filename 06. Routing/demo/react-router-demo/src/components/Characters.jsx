@@ -8,12 +8,17 @@ export default function Characters() {
     const [characters, setCharacters] = useState([]);
 
     useEffect(() => {
-        fetch(`${baseURL}/people`)
+        const abortController = new AbortController();
+
+        fetch(`${baseURL}/people`, {signal: abortController.signal}) //unmounted
             .then(res => res.json())
             .then(data => {
                 setCharacters(data.results)
             
-            })
+            });
+            return () => {
+                abortController.abort();
+            }
     })
 
     return (
