@@ -43,3 +43,27 @@
     font-weight: 600;
     padding: 1em 2em 1em 0;
 }
+
+
+.user{
+    display: flex;
+    align-items: center;
+}
+
+.user ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.user ul li {
+    display: block;
+}
+
+.user ul li a {
+    text-decoration: none;
+    color:#515151;
+    font-size: 0.8em;
+    font-weight: 600;
+    padding: 1em 2em 1em 0;
+}

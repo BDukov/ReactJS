@@ -1,8 +1,7 @@
-import style from './Fluid.module.css';
 
 export default function Fluid() {
     return (
-        <div className={style.container}>
+        <div className='container'>
         <div className="fluid-products">
             <div className="section-title-row">
                 <h2>Why Choos our Honey</h2>
@@ -12,7 +11,7 @@ export default function Fluid() {
             <div className="products-row">
                 <div className="col">
                     <div className="cover-text-center">
-                        <img className="w-125" src="/images/icon/honeycomb.png" alt=""/>
+                        <img className="w-125" src="./src/assets/images/icon/honeycomb.png" alt=""/>
                         <h2 className="text-decoration">Organic Honey</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus mollis malesuada. Sed
                             suscipit, tortor nec sollicitudin tincidunt nibh. </p>
@@ -20,7 +19,7 @@ export default function Fluid() {
                 </div>
                 <div className="col">
                     <div className="cover-text-center">
-                        <img className="w-125" src="/images/icon/bee.png" alt=""/>
+                        <img className="w-125" src="./src/assets/images/icon/bee.png" alt=""/>
                         <h2 className="text-decoration">Queen Bee Honey</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus mollis malesuada. Sed
                             suscipit, tortor nec sollicitudin tincidunt nibh. </p>
@@ -28,7 +27,7 @@ export default function Fluid() {
                 </div>
                 <div className="col">
                     <div className="cover-text-center">
-                        <img className="w-125" src="/images/icon/honey.png" alt=""/>
+                        <img className="w-125" src="./src/assets/images/icon/honey.png" alt=""/>
                         <h2 className="text-decoration">Hygienic Packing </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus mollis malesuada. Sed
                             suscipit, tortor nec sollicitudin tincidunt nibh. </p>
@@ -36,7 +35,7 @@ export default function Fluid() {
                 </div>
                 <div className="col">
                     <div className="cover-text-center">
-                        <img className="w-125" src="/images/icon/fast.png" alt=""/>
+                        <img className="w-125" src="./src/assets/images/icon/fast.png" alt=""/>
                         <h2 className="text-decoration">Fast Delivery </h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed maximus mollis malesuada. Sed
                             suscipit, tortor nec sollicitudin tincidunt nibh. </p>

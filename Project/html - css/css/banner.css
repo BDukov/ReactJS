@@ -1,16 +1,23 @@
+
+
 .banner {
   display: flex;
   flex-direction: column;
-  background-image: url(/images/slider/s1.jpg);
+  background-image: url(/images/slider/s2.jpg);
   background-position-x: center;
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat; */
   background-size: cover;
 }
 
 .hero-banner .container {
-  min-height: 27em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   color: #515151;
   /* background: blue; */
+  min-height: 27em;
 }
 
 .hero-banner .container h1:first-child {
@@ -27,30 +34,26 @@
 }
 
 .hero-banner img {
-  width: 70%;
+  display: block;
+   max-width: 30em;
   height: auto;
-  /* object-fit: cover; */
-}
+} 
 
 .hero-banner .container {
   display: flex;
   flex-direction: row;
-  flex: 1 1 auto;
   margin-top: 2em;
 }
 
-.banner-image {
+ .banner-image {
   text-align: center;
-  margin-top: 5em;
-  /* display: block; */
-}
+} 
 
 .banner-info {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  /* flex-wrap: wrap; */
-  /* text-align: center; */
+  align-items: center;
+  flex-wrap: wrap;
   margin-top: 2em;
 }
 
@@ -61,9 +64,11 @@
 .banner-info h1 {
     font-size: 2.5em;
     font-weight: 800;
-    align-self: stretch;
+    /* align-self: stretch; */
 }
 
 .banner-info p {
-  align-self: stretch;
+  /* align-self: stretch; */
 }
+
+
