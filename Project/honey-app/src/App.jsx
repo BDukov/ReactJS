@@ -1,25 +1,32 @@
+/* eslint-disable react/jsx-no-undef */
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+
 import './App.css'
 import Header from './components/Header'
-import Banner from './components/Banner'
-import Fluid from './components/Fluid'
-import HoneyTypes from './components/HoneyTypes'
-import About from './components/About'
-import Testimonial from './components/Testimonial'
-import Blog from './components/Blog'
 import Footer from './components/Footer'
+import Home from './pages/Home/Home'
+import Login from './pages/Login/Login'
+import Register from './pages/Register/Register'
+import Blog from './pages/Blog/Blog'
+// import { useAuthContext } from './hooks/useAuthContext'
 
 function App() {
+  // const { user , authReady } = useAuthContext();
 
   return (
     <>
+  
+    <BrowserRouter>
     <Header />
-    <Banner />
-    <Fluid />
-    <HoneyTypes />
-    <About />
-    <Testimonial />
-    <Blog />
+    <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path='/login' element={<Login/>} />
+      <Route path='/register' element={<Register/>} />
+      <Route path='/blog' element={<Blog />}/>
+    </Routes>
     <Footer />
+    </BrowserRouter>
+
     </>
   )
 }

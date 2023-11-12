@@ -1,3 +1,7 @@
+import { Link } from "react-router-dom";
+
+
+//Import classes from CSS and Pictures files
 import logo from '../assets/images/logo.png';
 import classes from './Header.module.css';
 
@@ -29,19 +33,13 @@ export default function Header() {
                             behavior: 'smooth',
                         })
                     }}><a href="#">Types Of Honey</a></li>
-                    <li onClick={(e) => {
-                        e.preventDefault();
-                        window.scrollTo({
-                            top:document.querySelector('.blog').offsetTop,
-                            behavior: 'smooth',
-                        })
-                    }}><a href="#">Blog</a></li>
+                    <li><Link to='/blog'>Blog</Link></li>
                 </ul>
             </div>
             <div className={classes.user}>
                 <ul>
-                <li><a href="#">Register</a></li>
-                <li><a href="#">Login</a></li>
+                <li><Link to="/register">Register</Link></li>
+                <li><Link to="/login">Login</Link></li>
                 </ul>
             </div>
         </div>
